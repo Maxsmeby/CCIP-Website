@@ -1,0 +1,140 @@
+Build a modern, responsive company website for CCIP Ltd (Cross Country Innovation Partners), a UK-based technology firm specialising in workplace automation solutions.
+
+Overall style & brand
+
+Clean, premium, enterprise-grade aesthetic
+
+Colour palette: predominantly white backgrounds, with multiple shades of blue (navy, cobalt, soft light blue) for accents, headings, buttons, and dividers
+
+Minimalist layout with generous white space
+
+Professional SaaS look similar to high-end B2B tech firms
+
+Subtle animations (hover effects, smooth transitions) but nothing flashy
+
+Tech requirements
+
+Use HTML, CSS, and JavaScript (or a modern framework if appropriate)
+
+Fully responsive (desktop, tablet, mobile)
+
+Clean, readable typography (modern sans-serif font)
+
+Modular, well-structured code that can be expanded later
+
+Site structure
+Create a top navigation bar with the following tabs:
+
+Home
+
+Products
+
+MacroMail
+
+MacroMarketing
+
+Contact Us
+
+Home page
+
+Hero section with a clear value proposition:
+
+Headline communicating that CCIP automates and optimises business processes using AI
+
+Subheading explaining cross-functional automation, efficiency gains, and scalability
+
+Call-to-action buttons such as “Explore Products” and “Contact Us”
+
+Section highlighting:
+
+Cost reduction
+
+Operational efficiency
+
+Intelligent automation
+
+Keep text concise and executive-level
+
+Products overview page
+
+Overview of CCIP’s two core products:
+
+MacroMail
+
+MacroMarketing
+
+Each product displayed as a clean card or section with:
+
+Short description
+
+Key benefits
+
+Button linking to the dedicated product page
+
+MacroMail product page
+
+Dedicated product page describing MacroMail as:
+
+A bespoke AI-powered email automation solution
+
+Reads incoming emails, categorises them, and drafts intelligent responses
+
+Learns from historical replies and company data to ensure personalisation and sophistication
+
+Integrates with calendars and CRM systems to book meetings and increase data usage
+
+Include a clear list of benefits:
+
+Faster response times
+
+Reduced manual workload
+
+Improved consistency and professionalism
+
+Include a call-to-action (e.g. “Request a Demo”)
+
+MacroMarketing product page
+
+Dedicated product page describing MacroMarketing as:
+
+An AI-driven marketing automation platform
+
+Generates advertisement content (images and videos)
+
+Automatically deploys ads across channels
+
+Iterates continuously based on live analytics to maximise reach and conversion
+
+Designed to significantly reduce marketing costs while improving performance
+
+Position it as effectively replacing or augmenting a traditional marketing team
+
+Include benefit-driven bullet points and a call-to-action
+
+Contact Us page
+
+Simple, professional contact form:
+
+Name
+
+Company
+
+Email
+
+Message
+
+Clear headline encouraging businesses to get in touch
+
+Optional placeholder for future integrations (e.g. CRM, email handling)
+
+Footer
+
+Company name: CCIP Ltd – Cross Country Innovation Partners
+
+Short tagline about workplace automation
+
+Basic navigation links
+
+Clean, understated footer styling
+
+The final result should feel like a credible, investor-ready B2B technology company website, not a template or demo. Prioritise clarity, professionalism, and scalability.
