@@ -7,23 +7,71 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <h1>CCIP Ltd</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">MacroMail</a>
-      <a href="#">MacroMarketing</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
 
-  <main class="hero">
-    <h2>Automating Work. Amplifying Impact.</h2>
-    <p>
-      Cross Country Innovation Partners builds AI-powered workplace automation
-      solutions that reduce cost, increase efficiency, and scale intelligently.
-    </p>
-  </main>
+<header class="navbar">
+  <div class="logo">CCIP</div>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#marketing">MacroMarketing</a>
+    <a href="#mail">MacroMail</a>
+    <a href="#contact" class="cta">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>AI That Runs Your Growth</h1>
+  <p>
+    Cross Country Innovation Partners builds intelligent automation systems
+    that replace manual teams and scale performance.
+  </p>
+  <a href="#contact" class="primary-btn">Talk to Us</a>
+</section>
+
+<section id="products" class="section">
+  <h2>Our Products</h2>
+</section>
+
+<section id="marketing" class="product highlight">
+  <h3>MacroMarketing</h3>
+  <p>
+    Fully autonomous marketing infrastructure. We generate, deploy, and
+    continuously optimise advertising using real-time analytics.
+  </p>
+  <ul>
+    <li>AI-generated image & video ads</li>
+    <li>Automated campaign deployment</li>
+    <li>Continuous performance optimisation</li>
+    <li>Lower cost, higher conversion</li>
+  </ul>
+</section>
+
+<section id="mail" class="product">
+  <h3>MacroMail</h3>
+  <p>
+    Intelligent email automation that reads, categorises, and drafts
+    personalised responses using company knowledge and past behaviour.
+  </p>
+  <ul>
+    <li>Email triage & response drafting</li>
+    <li>CRM & calendar integration</li>
+    <li>Consistent, high-quality communication</li>
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Name" required />
+    <input type="email" placeholder="Email" required />
+    <textarea placeholder="Tell us about your business"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© CCIP Ltd — Cross Country Innovation Partners</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
