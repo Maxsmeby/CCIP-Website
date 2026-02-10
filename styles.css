@@ -1,44 +1,217 @@
-body {
+/* ---------- CSS RESET ---------- */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #ffffff;
-  color: #0a2540;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav {
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+  --blue-primary: #0a4cff;
+  --blue-dark: #0a2540;
+  --blue-light: #eaf1ff;
+  --text-muted: #5b6b7c;
+  --border-light: #e6edf5;
+}
+
+/* ---------- BASE ---------- */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+  background: #ffffff;
+  color: var(--blue-dark);
+  line-height: 1.6;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
-  border-bottom: 1px solid #e6edf5;
+  padding: 1.25rem 4rem;
+  border-bottom: 1px solid var(--border-light);
 }
 
-.nav h1 {
-  color: #0a4cff;
+.logo {
   font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue-primary);
 }
 
-.nav a {
-  margin-left: 1.5rem;
+.navbar nav a {
+  margin-left: 2rem;
   text-decoration: none;
-  color: #0a2540;
+  color: var(--blue-dark);
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
+.navbar nav a:hover {
+  color: var(--blue-primary);
+}
+
+.navbar .cta {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background: var(--blue-primary);
+  color: #fff;
+}
+
+/* ---------- HERO ---------- */
 .hero {
-  max-width: 900px;
-  margin: 6rem auto;
-  text-align: center;
+  max-width: 1100px;
+  margin: 6rem auto 8rem;
   padding: 0 2rem;
+  text-align: center;
 }
 
-.hero h2 {
-  font-size: 3rem;
-  color: #0a4cff;
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 1.5rem auto 2.5rem;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.primary-btn {
+  display: inline-block;
+  background: var(--blue-primary);
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(10, 76, 255, 0.25);
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+  max-width: 1100px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------- PRODUCTS ---------- */
+.product {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 3rem;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+}
+
+.product.highlight {
+  background: var(--blue-light);
+  border: none;
+}
+
+.product h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product p {
+  color: var(--text-muted);
+  max-width: 750px;
+}
+
+.product ul {
   margin-top: 1.5rem;
-  color: #425466;
+  list-style: none;
+}
+
+.product li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.product li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--blue-primary);
+  font-weight: 700;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 1.2rem;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  font-size: 1rem;
+}
+
+.contact textarea {
+  min-height: 120px;
+}
+
+.contact button {
+  background: var(--blue-primary);
+  color: white;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  margin-top: 6rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+  color: var(--text-muted);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .navbar nav a {
+    margin-left: 1rem;
+  }
 }
